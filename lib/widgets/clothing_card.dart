@@ -38,9 +38,11 @@ class ClothingCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(5),
           ),
           child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image.asset(image, height: 100, width: 100),
               Text(name, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+              const Spacer(),
               Text('\$${price.toStringAsFixed(2)}',
                 style: const TextStyle(fontSize: 14, color: Colors.green),
               ),
